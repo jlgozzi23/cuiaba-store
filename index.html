@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New DouradoStore</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+
+      .bg-primary {
+        background-color: #000 !important;
+      }
+
+      .text-primary {
+        color: #008100 !important;
+      }
+
+      .btn-primary {
+        background-color: #ffd700;
+        border-color: #ffd700;
+      }
+
+      .btn-primary:hover {
+        background-color: #ffc300;
+        border-color: #ffc300;
+      }
+
+      .subheader {
+        background-color: #ffd700;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 15px 0;
+      }
+
+      .subheader ul.nav-pills {
+        margin-bottom: 0;
+      }
+
+      .subheader .nav-item {
+        margin-right: 15px;
+      }
+
+      header {
+        background-color: blue;
+      }
+      .container-header {
+        width: 100%;
+      }
+      .div-logo {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      #panel,
+      #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #242424;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark text-white text-center py-4">
+      <div class="container container-header">
+        <div class="row align-items-center">
+          <div class="col-2 div-logo">
+            <img
+              src="utils/cuiaba.png"
+              width="60px"
+              height="60px"
+              alt="Logo"
+              class="img-fluid img-logo"
+            />
+          </div>
+          <div class="col-6">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar produtos..."
+              />
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">Buscar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 text-right">
+            <a href="#" class="btn btn-link text-white" style="font-weight: 600"
+              >Minhas Compras</a
+            >
+            <a href="#" class="btn btn-link text-white" style="font-weight: 600"
+              >Meu Perfil</a
+            >
+            <a
+              href="#"
+              class="btn btn-link text-white"
+              style="font-weight: 600"
+            >
+              <i class="fa fa-shopping-cart" style="font-weight: 600"></i>
+              Carrinho
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subheader">
+      <div class="container">
+        <ul
+          class="nav nav-pills justify-content-center align-items-center"
+          style="gap: 20px"
+        >
+          <li class="categoria-id-3914831 borda-principal">
+            <a
+              class="text-primary"
+              href="https://www.douradostore.com.br/abridores"
+              title="Abridores"
+            >
+              <strong class="titulo cor-secundaria">Abridores</strong>
+            </a>
+          </li>
+          <li class="categoria-id-3883558 borda-principal">
+            <a
+              class="text-primary"
+              href="https://www.douradostore.com.br/acessorios"
+              title="Acessórios"
+            >
+              <strong class="titulo cor-secundaria">Acessórios</strong>
+            </a>
+          </li>
+          <li class="categoria-id-4180787 borda-principal">
+            <a
+              class="text-primary"
+              href="https://www.douradostore.com.br/Calcoes-treino"
+              title="Calções treino"
+            >
+              <strong class="titulo cor-secundaria">Calções treino</strong>
+            </a>
+          </li>
+          <li class="categoria-id-3431816 borda-principal">
+            <a
+              class="text-primary"
+              href="https://www.douradostore.com.br/Camisas-jogo"
+              title="Camisas jogo"
+            >
+              <strong class="titulo cor-secundaria">Camisas jogo</strong>
+            </a>
+          </li>
+          <li class="nav-item dropdown" style="position: relative">
+            <span class="nav-link text-primary">
+              <div class="titulo cor-secundaria ver-mais">
+                <strong style="cursor: pointer">Ver mais</strong>
+                <div
+                  class="dropdown"
+                  style="
+                    position: absolute;
+                    display: none;
+                    z-index: 999;
+                    background-color: #242424;
+                  "
+                >
+                  <a class="dropdown-item" href="#" style="color: #ffc300"
+                    >Opção 1</a
+                  >
+                  <a class="dropdown-item" href="#" style="color: #ffc300"
+                    >Opção 2</a
+                  >
+                  <a class="dropdown-item" href="#" style="color: #ffc300"
+                    >Opção 3</a
+                  >
+                  <a class="dropdown-item" href="#" style="color: #ffc300"
+                    >Opção 4</a
+                  >
+                </div>
+              </div>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="container mt-4" style="">
+      <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#bannerCarousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#bannerCarousel" data-slide-to="1"></li>
+          <li data-target="#bannerCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-10-11-39-o9g8r51kv6.jpeg"
+              alt="Camisa Jogador 01 Masculina 23/24"
+              class="d-block w-100"
+              alt="Promoção 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-08-07-at-11-24-00-93ki1x7ql8.jpeg"
+              alt="Camisa Goleiro 01 Masculina 23/24"
+              class="d-block w-100"
+              alt="Promoção 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.awsli.com.br/1920x1920/1080/1080006/banner/whatsapp-image-2023-06-21-at-16-16-38--2--diaq4sip4t.jpeg"
+              alt="Camisa Dourado Torcedor Verde 2023"
+              class="d-block w-100"
+              alt="Promoção 3"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#bannerCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#bannerCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <section class="container mt-4">
+        <h2>Mais Vendidos</h2>
+        <div class="row product-list"></div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-primary text-white text-center"
+      style="padding: 20px; cursor: pointer"
+    >
+      <div id="flip">About me</div>
+      <div id="panel">
+        <p>&copy; 2023 Cuiabá NewStore</p>
+        <p>All rights reserved to João Lucas Gozzi</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      //HTML
+      $(document).ready(function () {
+        // Seleciona a tag <body> e adiciona um parágrafo ao final do seu conteúdo
+        $(".div-logo").append("<p><strong>Cuiabá Store</strong></p>");
+      });
+
+      $(document).ready(function () {
+        for (let index = 0; index < 10; index++) {
+          $(".product-list")
+            .append(`<div class="col-md-3" style="padding: 20px;">
+                          <div class="card h-100">
+                              <img src="https://cdn.awsli.com.br/300x300/1080/1080006/produto/165598998/563508f958.jpg" alt="Camisa Goleiro Masculina 23/24 Verde" class="card-img-top img-fluid">
+                              <div class="card-body">
+                                  <h5 class="card-title">Camisa Goleiro Masculina 23/24 Verde</h5>
+                                  <p class="card-text">A camisa de goleiro é essencial para qualquer equipe. Mostre sua defesa com este uniforme verde do Cuiabá.</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                      `);
+        }
+      });
+      //Efeitos
+      $(document).ready(function () {
+        $(".img-logo").click(function () {
+          $(".div-logo").animate(
+            {
+              left: "100px",
+            },
+            2000
+          );
+        });
+      });
+
+      $(document).ready(function () {
+        $(".ver-mais").click(function () {
+          $(this).find(".dropdown").toggle("0.5s");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function () {
+        $(".btn-primary").click(function () {
+          alert("Item adicionado ao Carrinho");
+        });
+      });
+    </script>
+  </body>
+</html>
